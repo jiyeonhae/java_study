@@ -5,10 +5,16 @@ public class Main {
 
         /*
         * 주석 : 여러줄의 영역을 인식하지 못하게 해야할 경우에 사용
+        *
+        * \n new line
+        * \t tab space4times
+        * \\ \
+        * \' '
+        * \" "
+        *
+        *
         */
 
-       int a = 2;
-       System.out.print(a);
-        //a12
+
     }
 }
