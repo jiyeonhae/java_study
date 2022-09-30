@@ -15,6 +15,16 @@ public class Main {
         *
         */
 
+        {
+            int n = 1;
+            switch (n) {
+
+                  case 0:
+                    break;
+
+            }
+        }
+
 
     }
 }
