@@ -13,6 +13,17 @@ public class OT {
         }
         //구구단 홀수 or 짝수단
 
+
+        {
+           /*
+           for for dan
+              for for num
+                if (홀짝)
+                  continue;
+
+            */
+
+        }
     }
 }
 
