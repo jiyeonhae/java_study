@@ -39,7 +39,7 @@ public class EX05 {
         for (int i = 0; i < asd.length - 1; ++i){    //현재의 수  - 맨마지막 index의 숫자는 존재x
             for (int j = (i+1); j< asd.length; ++j){      //비교할 다음 수 - i번째 다음의 숫자들과 비교해야해서 i+1
 
-                if (asd[i]< asd[j]){ //--------------------------------부호를 통해 오름차/내림차 변경가능
+                if (asd[i]     >     asd[j]){ //--------------------------------부호를 통해 오름차/내림차 변경가능
                     int temp = asd[i];
                     asd[i] = asd[j];
                     asd[j] = temp;
@@ -64,7 +64,7 @@ public class EX05 {
         for (int i = 0; i< asd.length-1; i++){
             int indexMin = i;
             for (int j = i +1; j< asd.length; j++){
-                if (asd[j]> asd[indexMin]){          //--------------------------------부호를 통해 오름차/내림차 변경가능
+                if (asd[j]     >    asd[indexMin]){      //--------------------------------부호를 통해 오름차/내림차 변경가능
                     indexMin = j;
                 }
             }
