@@ -16,7 +16,14 @@ public class EX05 {
         while (true) {
             int num = (int) (Math.random()*30+1);
             boolean check = true;
-
+            /*
+            for (int element : asd) {
+                if (num == element) {
+                check = false;
+                break;   ------같은 값이 있을 시 뒤의 요소를 확인할 단계 거치지 않고 빠져나감
+                }
+              }
+             */
             for (int i = 0; i <= index; ++i){
                 if (asd[index] == num) {
                     check = false;
@@ -28,19 +35,25 @@ public class EX05 {
                 ++index;
             }
             if (index == 5) break;
-
         }
+
         for (int i = 0; i < asd.length; ++i)
         {
             System.out.println(asd[i]);}
 
+        /*  for (int element : asd) {
+           sout (element);}
+         */
+
         System.out.println("====================================");
+
+
         //버블정렬 오름차 뒤로갈수록 커짐
         for (int i = 0; i < asd.length - 1; ++i){    //현재의 수  - 맨마지막 index의 숫자는 존재x
             for (int j = (i+1); j< asd.length; ++j){      //비교할 다음 수 - i번째 다음의 숫자들과 비교해야해서 i+1
 
                 if (asd[i]     >     asd[j]){ //--------------------------------부호를 통해 오름차/내림차 변경가능
-                    int temp = asd[i];
+                    int temp = asd[i]; //서로 swap 할 content가 필요
                     asd[i] = asd[j];
                     asd[j] = temp;
                 }
@@ -49,7 +62,10 @@ public class EX05 {
 
         System.out.println(Arrays.toString(asd));
 
+
         System.out.println("====================================");
+
+
         //선택정렬 내림차 뒤로갈수록 작아짐
                /* for (int i = 0; i < asd.length; ++i){
                     for (int j =0; j < i - 1; ++j) {
@@ -62,7 +78,7 @@ public class EX05 {
 
         int temp;
         for (int i = 0; i< asd.length-1; i++){
-            int indexMin = i;
+            int indexMin = i;  //위치할, 변경시킬 index가 필요
             for (int j = i +1; j< asd.length; j++){
                 if (asd[j]     >    asd[indexMin]){      //--------------------------------부호를 통해 오름차/내림차 변경가능
                     indexMin = j;
@@ -76,5 +92,13 @@ public class EX05 {
         }
 
         System.out.println(Arrays.toString(asd));
+
+        for (int i = 0; i < asd.length -1; ++i){
+            int index2 = 0;
+            for (int j = i+1; j< asd.length ; ++j) {
+
+            }
+        }
+
     }
 }
