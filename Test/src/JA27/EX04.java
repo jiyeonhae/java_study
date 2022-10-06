@@ -45,8 +45,9 @@ public class EX04 {
         //난수생성 완료
 
         //정렬    -- 버블 정렬 안깔끔 잘안씀
-        for (int i = 0; i < arr1.length - 1; ++i){    //현재의 수  - 맨마지막 index의 숫자는 존재x
+        for (int i = 0; i < arr1.length - 1; ++i){    //현재의 수  - 맨마지막 index의 숫자는 존재x 맨앞에서  직전까지
             for (int j = (i+1); j< arr1.length; ++j){      //비교할 다음 수 - i번째 다음의 숫자들과 비교해야해서 i+1
+                                                            //i다음 수부터 끝까지
 
                 if (arr1[i]> arr1[j]){
                     int temp = arr1[i];
