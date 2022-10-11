@@ -1,7 +1,7 @@
 package Pac1;
 
 public class MemberMain {
-    
+    //기본생성자? 는 여기에
 
     public static void main(String[] args) {
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!! stack hip 등 data 구조 정리해오기!!!!!!!!!!!!!!!!!!!
