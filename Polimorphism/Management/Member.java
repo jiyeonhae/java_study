@@ -6,7 +6,7 @@ public class Member extends Parent{
     int age;
     //alt + insert == code generator
 
-    One group; //has - a; //소속으로 치자
+    One group; //has - a : 상속이 아니지만 포함되는 관계 벤다이어그램으로 생각하면 됨
     //이름바꾸기는 refactor -> rename
 
 
