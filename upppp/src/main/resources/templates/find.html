@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="kr" xmlns:th="http://thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Find</title>
+</head>
+<body>
+<form action="findName" method="post" th:object="${object}">    <!--action tag = move to controller에서 action"이름"에 해당하는 작용을 실행시킴-->
+    <input type="text" placeholder="input name" name="userName"/>   <!--name=""에서 column이름과 동일해야 들어감-->
+    <button type="submit">Find that Member</button>
+
+</form>
+</body>
+</html>

@@ -3,6 +3,8 @@ package com.example.upppp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
+//https://github.com/WinSpoon/springboot
 @SpringBootApplication //MAIN격 역할, 실행이전 각 @ 분석 후 layer 구분
 public class UppppApplication {
 

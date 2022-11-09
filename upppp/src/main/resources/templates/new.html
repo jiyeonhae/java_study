@@ -5,12 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-  <form action="create" method="post"> YApp    <!--action tag = move to create page-->
-    <input type="text" placeholder="input name" name="name"/>
-    <button type="submit">namenamename</button>
+  <form action="create" method="post" th:object="${object}"> YApp    <!--action tag = activate Controller(create) -->
+    <input type="text" placeholder="input name" name="userName"/>   <!--name=""에서 column이름과 동일해야 들어감-->
+    <button type="submit">name</button>
 
-      <input type="number" placeholder="age (only num)" name="age">
-    <button type="submit">age</button>
+     <!-- <input type="number" placeholder="age (only num)" name="age">
+    <button type="submit">age</button>-->
   </form>
 </body>
 </html>

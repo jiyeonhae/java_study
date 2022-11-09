@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="kr" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>FINDALL</title>
+</head>
+<body>
+    <tr th:each="member : ${object}">
+        <td th:text="${member.userName}"></td>
+    </tr>
+
+<button type="home" onclick="location.href='index.html'">HOME</button>
+</body>
+</html>
